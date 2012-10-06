@@ -1,5 +1,7 @@
-
-package com.loc;
+/**
+ * 
+ */
+package com.anuragkapur.hth.proximity;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -7,11 +9,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.net.URLEncoder;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,6 +18,10 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONSerializer;
+
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
 import org.apache.commons.httpclient.methods.GetMethod;
@@ -29,13 +30,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import net.sf.json.JSONSerializer;
+/**
+ * @author anurag.kapur
+ *
+ */
+public class ProximityCalculator {
 
-
-public class Proximity {
-	
 	private static final String GEOCODE_REQUEST_URL = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&region=uk";
 	private static HttpClient httpClient = new HttpClient(new MultiThreadedHttpConnectionManager());
 
@@ -197,5 +197,14 @@ public class Proximity {
 		}
         return resultData;
     }
-    
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ProximityCalculator proximity = new ProximityCalculator();
+		System.out.println(proximity.Calcproximit("waterloo london", "oldstreet london"));
+
+	}
+
 }
