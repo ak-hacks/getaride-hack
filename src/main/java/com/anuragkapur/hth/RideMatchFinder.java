@@ -3,9 +3,14 @@
  */
 package com.anuragkapur.hth;
 
+import java.net.UnknownHostException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+
+import com.anuragkapur.hth.dao.TweetsDAO;
 
 /**
  * @author anurag.kapur
@@ -13,8 +18,17 @@ import java.util.concurrent.TimeUnit;
  */
 public class RideMatchFinder {
 
+	private static final Logger LOGGER = Logger.getLogger(RideMatchFinder.class);
+	
 	private static void doPeriodicWork() {
-		System.out.println("Hello World");
+		TweetsDAO tweetsDao = new TweetsDAO();
+		try {
+			LOGGER.debug("Will process ride requests");
+			tweetsDao.processRideRequests();
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
