@@ -12,6 +12,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import com.anuragkapur.hth.proximity.ProximityCalculator;
 import com.anuragkapur.hth.twitterclient.TweetRideMatches;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
@@ -79,6 +80,7 @@ public class TweetsDAO {
 	public void processRideRequests() throws UnknownHostException {
 		BasicDBObject query = new BasicDBObject();
 		query.put("serviced", "false");
+		
 		DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
 		DBObject tweetObject = null;
 		if (cursor.size() <= 0) {
@@ -96,23 +98,37 @@ public class TweetsDAO {
 	}
 	
 	public boolean findMatch(DBObject request) throws UnknownHostException {
+		ProximityCalculator proximityCalc = new ProximityCalculator();
+		
 		boolean matchFound = false;
 		BasicDBObject query = new BasicDBObject();
-		query.put("from", request.get("from"));
-		query.put("to", request.get("to"));
+//		query.put("from", request.get("from"));
+//		query.put("to", request.get("to"));
 		query.put("time", request.get("time"));
 		query.put("_id", new BasicDBObject("$ne", request.get("_id")));
+		query.put("twitterHandle", new BasicDBObject("$ne", request.get("twitterHandle")));
 		
 		DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
-		cursor.limit(1);
-		DBObject match = null;
+		while(cursor.hasNext()) {
+			DBObject prospectiveMatch = cursor.next();
+			String prospectiveFrom = prospectiveMatch.get("from").toString();
+			String requestFrom = request.get("from").toString();
+			String prospectiveTo = prospectiveMatch.get("to").toString();
+			String requestTo = request.get("to").toString();
+			
+			float sourceDistances = proximityCalc.Calcproximit(prospectiveFrom, requestFrom);
+			float destinationDistances = proximityCalc.Calcproximit(prospectiveTo, requestTo);
+			
+			LOGGER.debug("Distance :: " + sourceDistances + " and " + destinationDistances);
+			
+			if (sourceDistances < 2 && destinationDistances < 2) {
+				matchFound = true;
+				markRequestsAsServiced(request, prospectiveMatch);
+			}
+		}
 		
-		if (cursor.hasNext()) {
-			match = cursor.next();
-			matchFound = true;
-			markRequestsAsServiced(request, match);
-		}else {
-			LOGGER.debug("No match found for :: " + request.get("twitterHandle"));
+		if (!matchFound) {
+			LOGGER.debug("No matched found for :: " + request.get("twitterHandle"));
 		}
 		
 		return matchFound;

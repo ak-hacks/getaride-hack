@@ -41,11 +41,15 @@ public class ProximityCalculator {
 
 	private static final String GEOCODE_REQUEST_DIR_URL = "http://maps.googleapis.com/maps/api/directions/json?sensor=false&region=uk";
 
-	public String Calcproximit (String from, String to) {
+	public float Calcproximit (String from, String to) {
+		
 		String distance = "NA";
+		float floatDistance = 999;
         try {
         	StringBuilder urlBuilder = new StringBuilder(GEOCODE_REQUEST_DIR_URL);
             if (StringUtils.isNotBlank(from) && StringUtils.isNotBlank(to)) {
+            	from = from + " london";
+            	to = to + " london";
             	urlBuilder.append("&origin=").append(URLEncoder.encode(from, "UTF-8"));
             	urlBuilder.append("&destination=").append(URLEncoder.encode(to, "UTF-8"));
             }
@@ -83,6 +87,10 @@ public class ProximityCalculator {
                 JSONObject json4 = (JSONObject) JSONSerializer.toJSON(parse3);             
                 //System.out.println(json4.getString("text"));
                 distance=json4.getString("text");
+                if(distance != null && !distance.equalsIgnoreCase("NA")) {
+                	distance = distance.substring(0,distance.indexOf(" "));
+                	floatDistance = Float.parseFloat(distance);
+                }
                 
             } finally {
                 getMethod.releaseConnection();
@@ -92,7 +100,7 @@ public class ProximityCalculator {
         } catch (Exception e) {
              e.printStackTrace();
         }
-        return distance;
+        return floatDistance;
 		
 	}
 
@@ -203,7 +211,7 @@ public class ProximityCalculator {
 	 */
 	public static void main(String[] args) {
 		ProximityCalculator proximity = new ProximityCalculator();
-		System.out.println(proximity.Calcproximit("waterloo london", "oldstreet london"));
+		System.out.println(proximity.Calcproximit("Baywater", "Queensway"));
 
 	}
 
