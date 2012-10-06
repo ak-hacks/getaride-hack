@@ -94,3 +94,77 @@
 2012-10-06 15:05:43,836 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254583199185903617" , "coordinates" :  null  , "time" : "1530" , "from" : "oldstreet" , "to" : "waterloo" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
 2012-10-06 15:05:44,328 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254583201136267265" , "coordinates" :  null  , "time" : "1530" , "from" : "oldstreet" , "to" : "waterloo" , "twitterHandle" : "pasupulaphani" , "serviced" : "false"}
 2012-10-06 15:05:46,308 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: bartabaka and pasupulaphani
+2012-10-06 18:04:58,825 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254628308497600512" , "coordinates" :  null  , "time" : "1830" , "from" : "oldstreet" , "to" : "stradford" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 18:05:34,511 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254628458603368448" , "coordinates" :  null  , "time" : "1830" , "from" : "oldstreet" , "to" : "stradford" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:05:38,095 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: bartabaka and anuragkapur
+2012-10-06 18:07:08,210 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254628851299266560" , "coordinates" :  null  , "time" : "1830" , "from" : "oldstreet" , "to" : "stradford" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:07:12,806 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: anuragkapur and bartabaka
+2012-10-06 18:08:30,194 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254629195374796800" , "coordinates" :  null  , "time" : "1830" , "from" : "oldstreet" , "to" : "stradford" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:08:34,146 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: anuragkapur and bartabaka
+2012-10-06 18:08:41,634 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254629243366027264" , "coordinates" :  null  , "time" : "1830" , "from" : "oldstreet" , "to" : "stratford" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 18:11:36,142 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254629974995251200" , "coordinates" :  null  , "time" : "1830" , "from" : "waterloo" , "to" : "victoria" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:12:24,546 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254630178137976835" , "coordinates" :  null  , "time" : "1830" , "from" : "waterloo" , "to" : "victoria" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 18:12:27,650 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: anuragkapur and bartabaka
+2012-10-06 18:18:41,099 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254631756165165056" , "coordinates" :  null  , "time" : "1900" , "from" : "wimbledon" , "to" : "surbiton" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 18:18:56,772 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254631823479537664" , "coordinates" :  null  , "time" : "1900" , "from" : "wimbeldon" , "to" : "surbiton" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:21:42,914 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:21:42,918 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:42,921 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:42,921 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:21:42,922 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:42,922 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:45,926 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:21:45,927 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:45,928 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:45,928 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:21:45,929 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:45,929 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:48,932 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:21:48,933 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:48,934 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:48,934 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:21:48,937 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:48,937 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:51,940 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:21:51,941 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:51,942 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:21:51,942 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:21:51,943 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:21:51,943 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:20,890 DEBUG [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 18:23:21,043 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:23:21,046 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:21,047 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:21,047 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:23:21,048 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:21,048 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:24,049 DEBUG [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 18:23:24,052 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:23:24,052 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:24,053 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:24,053 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:23:24,054 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:24,054 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:27,055 DEBUG [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 18:23:27,058 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:23:27,062 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:27,062 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:27,063 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:23:27,064 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:27,064 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:30,065 DEBUG [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 18:23:30,067 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:23:30,068 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:30,068 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:30,068 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:23:30,069 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:30,069 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:33,070 DEBUG [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 18:23:33,072 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: bartabaka
+2012-10-06 18:23:33,072 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:33,073 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: bartabaka
+2012-10-06 18:23:33,073 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Will look for a match for :: anuragkapur
+2012-10-06 18:23:33,073 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:23:33,074 DEBUG [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No match found for :: anuragkapur
+2012-10-06 18:27:11,806 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254633899597115392" , "coordinates" :  null  , "time" : "1900" , "from" : "wimbledon" , "to" : "surbiton" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 18:27:15,795 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: bartabaka and anuragkapur

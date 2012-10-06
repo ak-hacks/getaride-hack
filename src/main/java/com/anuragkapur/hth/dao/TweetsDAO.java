@@ -4,6 +4,7 @@
 package com.anuragkapur.hth.dao;
 
 import java.net.UnknownHostException;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import com.anuragkapur.hth.twitterclient.TweetRideMatches;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
@@ -122,6 +124,8 @@ public class TweetsDAO {
 		
 		DBConnectionManager.getCollection(COLLECTION_NAME).update(new BasicDBObject("_id",request.get("_id")), request);
 		DBConnectionManager.getCollection(COLLECTION_NAME).update(new BasicDBObject("_id",match.get("_id")), match);
+		Date date = new Date(System.currentTimeMillis());
+		TweetRideMatches.postMatch("@GetARideHack found a ride match for @" + request.get("twitterHandle") + " @" + match.get("twitterHandle") + " at " + date.toString());
 		
 		LOGGER.info("Matches found and served :: " + request.get("twitterHandle") + " and " + match.get("twitterHandle"));
 	}
