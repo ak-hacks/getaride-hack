@@ -1,0 +1,96 @@
+2012-10-06 14:46:26,953 DEBUG [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.twitterclient.UserStream  - {"friends":[]}
+2012-10-06 14:46:26,953 DEBUG [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.twitterclient.UserStream  - {"friends":[]}
+2012-10-06 14:46:26,956 DEBUG [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.twitterclient.UserStream  - 
+2012-10-06 14:46:26,956 DEBUG [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.twitterclient.UserStream  - 
+2012-10-06 14:49:57,791 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254579231265267712" , "coordinates" :  null  , "time" : "1500" , "from" : "victoria" , "to" : "islington" , "twitterHandle" : "anuragkapur" , "serviced" :  null }
+2012-10-06 14:51:25,057 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:25,178 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:28,182 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:28,183 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:31,186 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:31,188 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:34,190 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:34,190 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:37,192 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:37,193 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:40,195 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:40,197 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:43,199 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:43,200 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:46,202 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:46,203 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:49,207 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:49,209 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:51:52,210 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:51:52,211 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:28,097 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:28,231 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:31,234 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:31,236 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:34,238 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:34,240 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:37,242 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:37,243 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:40,244 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:40,245 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:43,247 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:43,248 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:46,250 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:46,252 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:49,254 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:49,256 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:52,260 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:52,261 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:55,262 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:55,263 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:54:58,265 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:54:58,266 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:55:01,267 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:01,269 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:55:04,271 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:04,273 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:55:06,105 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254580524406943745" , "coordinates" :  null  , "time" : "1500" , "from" : "victoria" , "to" : "islington" , "twitterHandle" : "anuragkapur" , "serviced" : "false"}
+2012-10-06 14:55:07,275 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:10,278 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:13,283 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:16,288 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:19,291 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:22,293 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:25,298 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:28,301 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:31,305 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:34,309 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:37,311 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:40,314 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:43,318 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:46,328 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:46,920 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254580695597461504" , "coordinates" :  null  , "time" : "1500" , "from" : "victoria" , "to" : "islington" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 14:55:49,330 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:49,333 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: anuragkapur and bartabaka
+2012-10-06 14:55:52,334 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:52,336 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:55:55,337 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:55,338 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:55:58,340 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:55:58,341 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:56:01,343 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:56:01,344 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:56:04,346 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:56:04,347 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:56:07,349 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:56:07,351 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:56:10,353 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:56:10,354 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:56:13,356 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:56:13,357 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:58:55,256 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:58:55,385 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:58:58,388 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:58:58,390 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:59:01,392 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:59:01,393 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 14:59:04,395 INFO  [pool-1-thread-1] com.anuragkapur.hth.matcher.RideMatchFinder  - Will process ride requests
+2012-10-06 14:59:04,397 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - No unprocessed requests
+2012-10-06 15:05:43,836 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254583199185903617" , "coordinates" :  null  , "time" : "1530" , "from" : "oldstreet" , "to" : "waterloo" , "twitterHandle" : "bartabaka" , "serviced" : "false"}
+2012-10-06 15:05:44,328 INFO  [com.anuragkapur.hth.twitterclient.UserStream.main()] com.anuragkapur.hth.dao.TweetsDAO  - Inserting tweet into DB :: { "_id" : "254583201136267265" , "coordinates" :  null  , "time" : "1530" , "from" : "oldstreet" , "to" : "waterloo" , "twitterHandle" : "pasupulaphani" , "serviced" : "false"}
+2012-10-06 15:05:46,308 INFO  [pool-1-thread-1] com.anuragkapur.hth.dao.TweetsDAO  - Matches found and served :: bartabaka and pasupulaphani

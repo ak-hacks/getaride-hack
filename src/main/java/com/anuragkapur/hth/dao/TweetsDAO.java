@@ -66,32 +66,54 @@ public class TweetsDAO {
 			// Process user info
 			DBObject userData = (DBObject) tweetObj.get("user");
 			tweetToInsert.put("twitterHandle", userData.get("screen_name"));
+			
+			// Initialise and unserviced
+			tweetToInsert.put("serviced", "false");
 
 			insertTweet(tweetToInsert);
 		}
 	}
 	
 	public void processRideRequests() throws UnknownHostException {
-		DBObject request = getFirstUnprocessedTweet();
-		
-		if (request != null) {
-			BasicDBObject query = new BasicDBObject();
-			query.put("from", request.get("from"));
-			query.put("to", request.get("to"));
-			query.put("time", request.get("time"));
-			query.put("_id", new BasicDBObject("$ne", request.get("_id")));
-			
-			DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
-			cursor.limit(1);
-			DBObject match = null;
-			
-			if (cursor.hasNext()) {
-				match = cursor.next();
-				markRequestsAsServiced(request, match);
+		BasicDBObject query = new BasicDBObject();
+		query.put("serviced", "false");
+		DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
+		DBObject tweetObject = null;
+		if (cursor.size() <= 0) {
+			LOGGER.debug("No unprocessed requests");
+		}
+		while (cursor.hasNext()) {
+			tweetObject = cursor.next();
+			LOGGER.debug("Will look for a match for :: " + tweetObject.get("twitterHandle"));
+			if (findMatch(tweetObject)) {
+				break;
 			}else {
-				LOGGER.debug("No match found for :: " + request.get("twitterHandle"));
+				LOGGER.debug("No match found for :: " + tweetObject.get("twitterHandle"));
 			}
 		}
+	}
+	
+	public boolean findMatch(DBObject request) throws UnknownHostException {
+		boolean matchFound = false;
+		BasicDBObject query = new BasicDBObject();
+		query.put("from", request.get("from"));
+		query.put("to", request.get("to"));
+		query.put("time", request.get("time"));
+		query.put("_id", new BasicDBObject("$ne", request.get("_id")));
+		
+		DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
+		cursor.limit(1);
+		DBObject match = null;
+		
+		if (cursor.hasNext()) {
+			match = cursor.next();
+			matchFound = true;
+			markRequestsAsServiced(request, match);
+		}else {
+			LOGGER.debug("No match found for :: " + request.get("twitterHandle"));
+		}
+		
+		return matchFound;
 	}
 	
 	private void markRequestsAsServiced(DBObject request, DBObject match) throws UnknownHostException {
@@ -101,7 +123,7 @@ public class TweetsDAO {
 		DBConnectionManager.getCollection(COLLECTION_NAME).update(new BasicDBObject("_id",request.get("_id")), request);
 		DBConnectionManager.getCollection(COLLECTION_NAME).update(new BasicDBObject("_id",match.get("_id")), match);
 		
-		LOGGER.info("Match found and served :: " + request.get("twitterHandle") + " and " + match.get("twitterHandle"));
+		LOGGER.info("Matches found and served :: " + request.get("twitterHandle") + " and " + match.get("twitterHandle"));
 	}
 
 	private String getTweetType(DBObject tweetObj) {
@@ -116,25 +138,9 @@ public class TweetsDAO {
 
 		return key;
 	}
-	
-	private DBObject getFirstUnprocessedTweet() throws UnknownHostException {
-		BasicDBObject query = new BasicDBObject();
-		query.put("serviced", "false");
-		DBCursor cursor = DBConnectionManager.getCollection(COLLECTION_NAME).find(query);
-		cursor.limit(1);
-		DBObject tweetObject = null;
-		if (cursor.hasNext()) {
-			tweetObject = cursor.next();
-			LOGGER.debug("Will look for a match for :: " + tweetObject.get("twitterHandle"));
-		}else {
-			LOGGER.debug("No unprocessed requests found");
-		}
-		
-		return tweetObject;
-	}
 
 	private void insertTweet(DBObject tweetObj) throws UnknownHostException {
-		LOGGER.debug("Inserting tweet into DB");
+		LOGGER.info("Inserting tweet into DB :: " + tweetObj.toString());
 		DBConnectionManager.getCollection(COLLECTION_NAME).insert(tweetObj);
 	}
 
