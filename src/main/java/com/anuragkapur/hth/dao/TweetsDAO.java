@@ -90,7 +90,7 @@ public class TweetsDAO {
 			tweetObject = cursor.next();
 			LOGGER.debug("Will look for a match for :: " + tweetObject.get("twitterHandle"));
 			if (findMatch(tweetObject)) {
-				break;
+				return;
 			}else {
 				LOGGER.debug("No match found for :: " + tweetObject.get("twitterHandle"));
 			}
@@ -124,6 +124,7 @@ public class TweetsDAO {
 			if (sourceDistances < 2 && destinationDistances < 2) {
 				matchFound = true;
 				markRequestsAsServiced(request, prospectiveMatch);
+				return matchFound;
 			}
 		}
 		
